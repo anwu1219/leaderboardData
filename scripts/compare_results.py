@@ -159,4 +159,9 @@ def getRanking(metric="wall time", scheme="PAR2"):
 def checkConsistency(df):
       return
 
-df = compareSolvers(solvers[0],solvers[1], valueToCompare[0], limit=1200, family=sys.argv[1])
+
+def main():
+      df = compareSolvers(solvers[0],solvers[1], valueToCompare[0], limit=1200, family=sys.argv[1])
+
+if __name__ == "__main__":
+      main()
