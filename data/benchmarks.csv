@@ -179,7 +179,6 @@ acas,ACASXU_experimental_v2a_5_9%%property1
 acas,ACASXU_experimental_v2a_5_9%%property2
 acas,ACASXU_experimental_v2a_5_9%%property3
 acas,ACASXU_experimental_v2a_5_9%%property4
-benchmarks.csv,benchmarks.csv
 mnist,mnist20x20%%ind10109_tar8_eps0.016
 mnist,mnist20x20%%ind10142_tar7_eps0.016
 mnist,mnist20x20%%ind11567_tar1_eps0.256
