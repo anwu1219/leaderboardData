@@ -2,8 +2,9 @@ import os
 import csv
 import pandas as pd
 from os.path import join
+import pathlib
 
-curDir = os.getcwd()
+curDir=str(pathlib.Path(__file__).parent.absolute())
 dataDir = join(curDir, "../data/")
 
 def readData(frames, filename):
