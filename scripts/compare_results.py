@@ -43,4 +43,4 @@ for filename in os.listdir(dataDir):
 
 family = benchmarks.family.unique()
 
-      
+values = ["wall time", "cpu time", "memory"]
