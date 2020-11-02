@@ -1,3 +1,4 @@
+result,wall time,cpu time,memory,solver,commit,args,network,property
 to,1198.95,1200.06,541.2,Marabou,1425c620823537931129c623478b8cb8128b0a59,--verbosity=2,1200,ACASXU_experimental_v2a_1_1,property3
 to,1198.8,1200.11,449.9,Marabou,1425c620823537931129c623478b8cb8128b0a59,--verbosity=2,1200,ACASXU_experimental_v2a_1_2,property3
 to,1198.8,1200.11,524.7,Marabou,1425c620823537931129c623478b8cb8128b0a59,--verbosity=2,1200,ACASXU_experimental_v2a_1_3,property3

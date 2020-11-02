@@ -1,3 +1,4 @@
+result,wall time,cpu time,memory,solver,commit,args,network,property
 unsat,331.11,331.31,644.6,MIPVerify,bc88b7a03f03c5ce320ab3caf1f14ee85bf07e38,--tightening=lp,1200,ACASXU_experimental_v2a_1_1,property3
 unsat,62.75,64.12,541.7,MIPVerify,bc88b7a03f03c5ce320ab3caf1f14ee85bf07e38,--tightening=lp,1200,ACASXU_experimental_v2a_1_2,property3
 unsat,69.33,70.01,548.9,MIPVerify,bc88b7a03f03c5ce320ab3caf1f14ee85bf07e38,--tightening=lp,1200,ACASXU_experimental_v2a_1_3,property3
