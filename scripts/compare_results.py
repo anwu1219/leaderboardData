@@ -221,7 +221,7 @@ def getRanking(metric="PAR1 wall time", family="all", limit=5000, result='all'):
                 SOLVED.append(len(times[times < limit].tolist()))
                 PAR1.append(sum(times[times > limit]) + limit * (numInstances - SOLVED[-1]))
                 PAR2.append(sum(times[times > limit]) + limit * 2 * (numInstances - SOLVED[-1]))
-                DATE.append(solverToDate[solverId.split()[0]])
+                DATE.append(" ".join(solverToDate[solverId.split()[0]].split("_")))
           rankData = {"solver":solvers, "Commit date": DATE, "PAR1 wall time": PAR1, "PAR2 wall time": PAR2, "solved": SOLVED}
       df = pd.DataFrame(data=rankData)
       df = df.sort_values(by=[metric], ascending=(metric != "solved"))
