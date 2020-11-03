@@ -55,12 +55,11 @@ for filename in os.listdir(dataDir):
                   solverToDate[solver] = date
 
 families = benchmarks.family.unique().tolist()
-cmap = ListedColormap(families)
-print(cmap)
 families = ['all'] + families
 
 valueToCompare = ["wall time"]
 scheme = ["PAR2", "PAR1"]
+results = ["all", "sat", "unsat"]
 
 benchmark_to_family = {}
 for row in benchmarks.values.tolist():
@@ -108,7 +107,15 @@ def getFamily(benchmark, fam="all"):
       else:
             return "unknown"
 
-def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limit=5000, family='all'):
+def getResult(results):
+      assert(not('sat' in results and 'unsat' in results))
+      if 'sat' in results:
+            return 'sat'
+      if 'unsat' in results:
+            return 'unsat'
+      return 'unknown'
+
+def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limit=5000, family='all', result='all'):
       df1 = getDataForSolver(solverId1, metric, scheme, limit)
       df2 = getDataForSolver(solverId2, metric, scheme, limit)
       df = pd.concat([df1, df2])
@@ -123,12 +130,20 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       df_scheme['family'] = df_scheme.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
 
       df_result = df.pivot(index='benchmark', columns='solverId', values="result").reset_index()
-      print(df_result)
+      df_result["result"] = df_result.apply(lambda row: getResult([row[solverId1], row[solverId2]]), axis=1)
+      resultMap = df_result.set_index('benchmark').T.to_dict('list')
+      df_scheme['result'] = df_scheme.apply(lambda row: resultMap[row['benchmark']][-1], axis=1)
+      if result == 'all':
+            df_scheme = df_scheme[df_scheme['result'] != 'unknown']
+      else:
+            df_scheme = df_scheme[df_scheme['result'] == 'sat']
 
-      plt.figure(figsize=(8,7))
+      df_scheme['family'] = df_scheme.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
+
+      plt.figure(figsize=(9,8))
       sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", s=70)
       #plt.scatter(x=solverId1, y=solverId2, data=df_scheme, c="family", label="family")
-      plt.legend(bbox_to_anchor=(1.01, 1),borderaxespad=0)
+      plt.legend(bbox_to_anchor=(1.01, 1),borderaxespad=0, fontsize=15)
       plt.plot([0, limit], [0, limit], '--', color='grey')
       plt.text(limit/2 * 0.9, limit * 0.95, '2x', fontsize=12)
       plt.plot([0, limit/2], [0, limit], '--', color='grey', linewidth=0.5)
@@ -142,14 +157,16 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       plt.plot([limit * 1.05, limit * 1.05], [0, limit * 1.05], color='blue', linewidth=0.8)
       plt.plot([0, limit * 1.1], [limit * 1.1, limit * 1.1], color='red', linewidth=0.8)
       plt.plot([limit * 1.1, limit * 1.1], [0, limit * 1.1], color='red', linewidth=0.8)
-      plt.text(0, limit -25, 'to', fontsize=8)
-      plt.text(0, limit * 1.05 - 25, 'mo', fontsize=8)
-      plt.text(0, limit * 1.1 - 25, 'err', fontsize=8)
+      plt.text(0, limit -25, 'to', fontsize=10)
+      plt.text(0, limit * 1.05 - 25, 'mo', fontsize=10)
+      plt.text(0, limit * 1.1 - 25, 'err', fontsize=10)
 
       plt.xlim(0, limit * 1.12)   # set the xlim to left, right
       plt.ylim(0, limit * 1.12)
-      plt.xlabel(solverId1)
-      plt.ylabel(solverId2)
+      plt.xlabel(solverId1, fontsize=15)
+      plt.ylabel(solverId2, fontsize=15)
+      plt.xticks(fontsize=12)
+      plt.yticks(fontsize=12)
       plt.show()
 
 def getRanking(metric="wall time", scheme="PAR2"):
@@ -161,7 +178,7 @@ def checkConsistency(df):
 
 
 def main():
-      df = compareSolvers(solvers[0],solvers[1], valueToCompare[0], limit=1200, family=sys.argv[1])
+      df = compareSolvers(solvers[3],solvers[0], valueToCompare[0], limit=1200, family=sys.argv[1])
 
 if __name__ == "__main__":
       main()
