@@ -67,8 +67,6 @@ for filename in os.listdir(dataDir):
             elif dateEarlierThan(solverToDate[solver], date):
                   solverToDate[solver] = date
 
-print(solverToDate)
-
 families = benchmarks.family.unique().tolist()
 families = ['all'] + families
 
