@@ -1,0 +1,7 @@
+result,cpu time,wall time,memory,solver,commit,time limit,args,network,property
+unsat,1.5,210,10,Marabou,1,--num-workers=4+--initial-divides=3+--snc,1200,n,m1
+to,1200,1199,10,Marabou,1,--num-workers=4+--initial-divides=3+--snc,1200,n,m2
+unsat,1.5,400,10,Marabou,1,--num-workers=4+--initial-divides=3+--snc,1200,n,a1
+unsat,1.5,530,10,Marabou,1,--num-workers=4+--initial-divides=3+--snc,1200,n,a2
+unsat,1.5,120,10,Marabou,1,--num-workers=4+--initial-divides=3+--snc,1200,n,t1
+sat,1.5,1199,10,Marabou,1,--num-workers=4+--initial-divides=3+--snc,1200,n,t2
