@@ -135,8 +135,12 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       df_scheme['result'] = df_scheme.apply(lambda row: resultMap[row['benchmark']][-1], axis=1)
       if result == 'all':
             df_scheme = df_scheme[df_scheme['result'] != 'unknown']
-      else:
+      elif result == 'sat':
             df_scheme = df_scheme[df_scheme['result'] == 'sat']
+      elif result == 'unsat':
+            df_scheme = df_scheme[df_scheme['result'] == 'sat']
+      else:
+            assert(False)
 
       df_scheme['family'] = df_scheme.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
 
@@ -178,7 +182,7 @@ def checkConsistency(df):
 
 
 def main():
-      df = compareSolvers(solvers[3],solvers[0], valueToCompare[0], limit=1200, family=sys.argv[1])
+      df = compareSolvers(solvers[3],solvers[0], valueToCompare[0], limit=1200, family=sys.argv[1], result=sys.argv[2])
 
 if __name__ == "__main__":
       main()
