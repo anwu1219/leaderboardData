@@ -170,8 +170,8 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       plt.text(0, limit * MO_FACTOR - 25, 'mo', fontsize=10)
       plt.text(0, limit * ERR_FACTOR - 25, 'err', fontsize=10)
 
-      plt.xlim(0, limit * ERR_FACTOR2)   # set the xlim to left, right
-      plt.ylim(0, limit * ERR_FACTOR2)
+      plt.xlim(0, limit * (ERR_FACTOR + 0.01))   # set the xlim to left, right
+      plt.ylim(0, limit * (ERR_FACTOR + 0.01))
       plt.xlabel(solverId1, fontsize=15)
       plt.ylabel(solverId2, fontsize=15)
       plt.xticks(fontsize=12)
