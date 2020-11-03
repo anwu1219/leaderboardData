@@ -138,7 +138,7 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       elif result == 'sat':
             df_scheme = df_scheme[df_scheme['result'] == 'sat']
       elif result == 'unsat':
-            df_scheme = df_scheme[df_scheme['result'] == 'sat']
+            df_scheme = df_scheme[df_scheme['result'] == 'unsat']
       else:
             assert(False)
 
