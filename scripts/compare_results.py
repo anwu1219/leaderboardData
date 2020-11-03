@@ -183,8 +183,8 @@ def compareSolvers(solverId1, solverId2, metric="wall time", limit=5000, family=
       plt.text(1, limit * MO_FACTOR - 25, 'mo', fontsize=10)
       plt.text(1, limit * ERR_FACTOR - 25, 'err', fontsize=10)
 
-      plt.xlim(0, limit * (ERR_FACTOR + 0.5))   # set the xlim to left, right
-      plt.ylim(0, limit * (ERR_FACTOR + 0.5))
+      plt.xlim(1, limit * (ERR_FACTOR + 0.5))   # set the xlim to left, right
+      plt.ylim(1, limit * (ERR_FACTOR + 0.5))
       plt.xlabel(solverId1, fontsize=15)
       plt.ylabel(solverId2, fontsize=15)
       plt.xticks(fontsize=12)
@@ -249,8 +249,8 @@ def checkConsistency(df):
 
 
 def main():
-      #df = compareSolvers(solvers[int(sys.argv[3])], solvers[int(sys.argv[4])], metric="wall time", limit=1200, family=sys.argv[2], result='all')
-      df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='unsat', limit=1200)
+      df = compareSolvers(solvers[int(sys.argv[3])], solvers[int(sys.argv[4])], metric="wall time", limit=1200, family=sys.argv[2], result='all')
+      #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='unsat', limit=1200)
 
 if __name__ == "__main__":
       main()
