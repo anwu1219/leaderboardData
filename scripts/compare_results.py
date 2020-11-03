@@ -11,6 +11,9 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 
+MO_FACTOR=1.05
+ERR_FACTOR=1.1
+
 def readData(frames, filename):
       df = pd.read_csv(filename)
       frames.append(df)
@@ -58,7 +61,7 @@ families = benchmarks.family.unique().tolist()
 families = ['all'] + families
 
 valueToCompare = ["wall time"]
-scheme = ["PAR2", "PAR1"]
+schemes = ["PAR2", "PAR1"]
 results = ["all", "sat", "unsat"]
 
 benchmark_to_family = {}
@@ -73,9 +76,9 @@ def getPARTime(time, result, par, limit):
       if time > limit or result == 'to':
             return par * limit
       elif result == 'mo':
-            return par * limit * 1.05
+            return par * limit * MO_FACTOR
       elif result == 'err':
-            return par * limit * 1.1
+            return par * limit * ERR_FACTOR
       else:
             return time
       
@@ -116,6 +119,8 @@ def getResult(results):
       return 'unknown'
 
 def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limit=5000, family='all', result='all'):
+      if solverId1 == solverId2:
+            return
       df1 = getDataForSolver(solverId1, metric, scheme, limit)
       df2 = getDataForSolver(solverId2, metric, scheme, limit)
       df = pd.concat([df1, df2])
@@ -138,7 +143,7 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       elif result == 'sat':
             df_scheme = df_scheme[df_scheme['result'] == 'sat']
       elif result == 'unsat':
-            df_scheme = df_scheme[df_scheme['result'] == 'sat']
+            df_scheme = df_scheme[df_scheme['result'] == 'unsat']
       else:
             assert(False)
 
@@ -157,32 +162,79 @@ def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limi
       plt.plot([0, limit], [0, limit/8], '--', color='grey', linewidth=0.5)
       plt.plot([0, limit], [limit, limit], color='grey', linewidth=0.8)
       plt.plot([limit, limit], [0, limit], color='grey', linewidth=0.8)
-      plt.plot([0, limit * 1.05], [limit * 1.05, limit * 1.05], color='blue', linewidth=0.8)
-      plt.plot([limit * 1.05, limit * 1.05], [0, limit * 1.05], color='blue', linewidth=0.8)
-      plt.plot([0, limit * 1.1], [limit * 1.1, limit * 1.1], color='red', linewidth=0.8)
-      plt.plot([limit * 1.1, limit * 1.1], [0, limit * 1.1], color='red', linewidth=0.8)
+      plt.plot([0, limit * MO_FACTOR], [limit * MO_FACTOR, limit * MO_FACTOR], color='blue', linewidth=0.8)
+      plt.plot([limit * MO_FACTOR, limit * MO_FACTOR], [0, limit * MO_FACTOR], color='blue', linewidth=0.8)
+      plt.plot([0, limit * ERR_FACTOR], [limit * ERR_FACTOR, limit * ERR_FACTOR], color='red', linewidth=0.8)
+      plt.plot([limit * ERR_FACTOR, limit * ERR_FACTOR], [0, limit * ERR_FACTOR], color='red', linewidth=0.8)
       plt.text(0, limit -25, 'to', fontsize=10)
-      plt.text(0, limit * 1.05 - 25, 'mo', fontsize=10)
-      plt.text(0, limit * 1.1 - 25, 'err', fontsize=10)
+      plt.text(0, limit * MO_FACTOR - 25, 'mo', fontsize=10)
+      plt.text(0, limit * ERR_FACTOR - 25, 'err', fontsize=10)
 
-      plt.xlim(0, limit * 1.12)   # set the xlim to left, right
-      plt.ylim(0, limit * 1.12)
+      plt.xlim(0, limit * (ERR_FACTOR + 0.01))   # set the xlim to left, right
+      plt.ylim(0, limit * (ERR_FACTOR + 0.01))
       plt.xlabel(solverId1, fontsize=15)
       plt.ylabel(solverId2, fontsize=15)
       plt.xticks(fontsize=12)
       plt.yticks(fontsize=12)
       plt.show()
 
-def getRanking(metric="wall time", scheme="PAR2"):
-      for solverId in solvers:
-            df = getDataForSolver(solverId, metric)
+dataGenerated = False
+rankData = {}
+
+
+# ["PAR1 wall time", "PAR2 wall time", "solved"]
+def getRanking(metric="PAR1 wall time", family="all", limit=5000, result='all'):
+      if not dataGenerated:
+          dfs = []
+          for solverId in solvers:
+                dfs.append(getDataForSolver(solverId, "wall time", "PAR1", limit))
+          df = pd.concat(dfs)
+
+          if family != 'all':
+                df['family'] = df.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
+                df = df[df['family'] == family]
+          else:
+                df['family'] = df.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
+                df = df[df['family'] != "unknown"]
+
+          df_scheme = df.pivot(index='benchmark', columns='solverId', values="PAR1").reset_index()
+          df_scheme['family'] = df_scheme.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
+
+          df_result = df.pivot(index='benchmark', columns='solverId', values="result").reset_index()
+          df_result["result"] = df_result.apply(lambda row: getResult([row[solverId] for solverId in solvers]), axis=1)
+          resultMap = df_result.set_index('benchmark').T.to_dict('list')
+          df_scheme['result'] = df_scheme.apply(lambda row: resultMap[row['benchmark']][-1], axis=1)
+          if result == 'sat':
+                df_scheme = df_scheme[df_scheme['result'] == 'sat']
+          elif result == 'unsat':
+                df_scheme = df_scheme[df_scheme['result'] == 'unsat']
+
+          df_scheme['family'] = df_scheme.apply(lambda row: getFamily(row['benchmark'], family), axis=1)
+
+          PAR1 = []
+          PAR2 = []
+          SOLVED = []
+          DATE = []
+          for solverId in solvers:
+                times = df_scheme[solverId].to_numpy()
+                numInstances = len(times.tolist())
+                SOLVED.append(len(times[times < limit].tolist()))
+                PAR1.append(sum(times[times < limit]) + limit * (numInstances - SOLVED[-1]))
+                PAR2.append(sum(times[times < limit]) + limit * 2 * (numInstances - SOLVED[-1]))
+                DATE.append(" ".join(solverToDate[solverId.split()[0]].split("_")))
+          rankData = {"solver":solvers, "Commit date": DATE, "PAR1 wall time": PAR1, "PAR2 wall time": PAR2, "solved": SOLVED}
+      df = pd.DataFrame(data=rankData)
+      df = df.sort_values(by=[metric], ascending=(metric != "solved"))
+      return df
+
 
 def checkConsistency(df):
       return
 
 
 def main():
-      df = compareSolvers(solvers[3],solvers[0], valueToCompare[0], limit=1200, family=sys.argv[1], result=sys.argv[2])
+      df = getRanking(family=sys.argv[1], metric = sys.argv[2], limit=1200)
+      print(df)
 
 if __name__ == "__main__":
       main()
