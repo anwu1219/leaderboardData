@@ -61,6 +61,8 @@ for filename in os.listdir(dataDir):
             elif not dateEarlierThan(solverToDate[solver], date):
                   solverToDate[solver] = date
 
+print(solverToDate)
+
 families = benchmarks.family.unique().tolist()
 families = ['all'] + families
 
@@ -249,8 +251,10 @@ def checkConsistency(df):
 
 
 def main():
+      print(solvers)
       df = compareSolvers(solvers[int(sys.argv[3])], solvers[int(sys.argv[4])], metric="wall time", limit=1200, family=sys.argv[2], result='all')
-      #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='unsat', limit=1200)
+      #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='all', limit=1200)
+      #print(df)
 
 if __name__ == "__main__":
       main()
