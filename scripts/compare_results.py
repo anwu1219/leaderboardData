@@ -27,10 +27,16 @@ def dateEarlierThan(date1, date2):
       weekday2,month2,day2,time2,year2,tz = date2.split("_")
       if int(year1) < int(year2):
             return True
-      if month.index(month1) < month.index(month2):
+      elif int(year1) > int(year2):
+            return False
+      elif month.index(month1) < month.index(month2):
             return True
-      if int(day1) < int(day2):
+      elif month.index(month1) > month.index(month2):
+            return False
+      elif int(day1) < int(day2):
             return True
+      elif int(day1) > int(day2):
+            return False
       return False
 
 curDir=str(pathlib.Path(__file__).parent.absolute())
@@ -58,7 +64,7 @@ for filename in os.listdir(dataDir):
 
             if solver not in solverToDate:
                   solverToDate[solver] = date
-            elif not dateEarlierThan(solverToDate[solver], date):
+            elif dateEarlierThan(solverToDate[solver], date):
                   solverToDate[solver] = date
 
 print(solverToDate)
