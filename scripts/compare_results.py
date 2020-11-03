@@ -170,7 +170,7 @@ def compareSolvers(solverId1, solverId2, metric="wall time", limit=5000, family=
       plt.xscale('log')
       plt.yscale('log')
 
-      sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", s=70)
+      sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", style="result",  s=70)
       plt.legend(bbox_to_anchor=(1.01, 1),borderaxespad=0, fontsize=15)
       plt.plot([1, limit], [1, limit], '--', color='grey')
       plt.text(limit/2 * 0.9, limit * 0.95, '2x', fontsize=12)
