@@ -35,10 +35,8 @@ def dateEarlierThan(date1, date2):
 
 curDir=str(pathlib.Path(__file__).parent.absolute())
 
-if sys.argv[1] == 'test':
-      dataDir = join(curDir, "../data_test/")
-else:
-      dataDir = join(curDir, "../data/")
+#dataDir = join(curDir, "../data_test/")
+dataDir = join(curDir, "../data/")
 
 experiments = []
 solvers = []

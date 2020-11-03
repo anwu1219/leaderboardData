@@ -1,0 +1,7 @@
+result,cpu time,wall time,memory,solver,commit,time limit,args,network,property
+unsat,1.5,400,10,MIPVerify,1,--tightening=mip+--timeout_per_node=1,1200,n,m1
+to,1200,1199,10,MIPVerify,1,--tightening=mip+--timeout_per_node=1,1200,n,m2
+unsat,1.5,200,10,MIPVerify,1,--tightening=mip+--timeout_per_node=1,1200,n,a1
+unsat,1.5,900,10,MIPVerify,1,--tightening=mip+--timeout_per_node=1,1200,n,a2
+to,1.5,1200,10,MIPVerify,1,--tightening=mip+--timeout_per_node=1,1200,n,t1
+sat,1.5,1000,10,MIPVerify,1,--tightening=mip+--timeout_per_node=1,1200,n,t2
