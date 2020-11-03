@@ -116,6 +116,8 @@ def getResult(results):
       return 'unknown'
 
 def compareSolvers(solverId1, solverId2, metric="wall time", scheme="PAR1", limit=5000, family='all', result='all'):
+      if solverId1 == solverId2:
+            return
       df1 = getDataForSolver(solverId1, metric, scheme, limit)
       df2 = getDataForSolver(solverId2, metric, scheme, limit)
       df = pd.concat([df1, df2])
