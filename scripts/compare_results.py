@@ -27,10 +27,16 @@ def dateEarlierThan(date1, date2):
       weekday2,month2,day2,time2,year2,tz = date2.split("_")
       if int(year1) < int(year2):
             return True
-      if month.index(month1) < month.index(month2):
+      elif int(year1) > int(year2):
+            return False
+      elif month.index(month1) < month.index(month2):
             return True
-      if int(day1) < int(day2):
+      elif month.index(month1) > month.index(month2):
+            return False
+      elif int(day1) < int(day2):
             return True
+      elif int(day1) > int(day2):
+            return False
       return False
 
 curDir=str(pathlib.Path(__file__).parent.absolute())
@@ -58,7 +64,7 @@ for filename in os.listdir(dataDir):
 
             if solver not in solverToDate:
                   solverToDate[solver] = date
-            elif not dateEarlierThan(solverToDate[solver], date):
+            elif dateEarlierThan(solverToDate[solver], date):
                   solverToDate[solver] = date
 
 families = benchmarks.family.unique().tolist()
@@ -164,8 +170,8 @@ def compareSolvers(solverId1, solverId2, metric="wall time", limit=5000, family=
       plt.xscale('log')
       plt.yscale('log')
 
-      sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", s=70)
-      plt.legend(bbox_to_anchor=(1.01, 1),borderaxespad=0, fontsize=15)
+      sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", style="result",  s=70)
+      plt.legend(bbox_to_anchor=(1.01, 1),borderaxespad=0, fontsize=15, ncol=2)
       plt.plot([1, limit], [1, limit], '--', color='grey')
       plt.text(limit/2 * 0.9, limit * 0.95, '2x', fontsize=12)
       plt.plot([1, limit/2], [2, limit], '--', color='grey', linewidth=0.5)
@@ -249,8 +255,10 @@ def checkConsistency(df):
 
 
 def main():
+      print(solvers)
       df = compareSolvers(solvers[int(sys.argv[3])], solvers[int(sys.argv[4])], metric="wall time", limit=1200, family=sys.argv[2], result='all')
-      #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='unsat', limit=1200)
+      #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='all', limit=1200)
+      #print(df)
 
 if __name__ == "__main__":
       main()
