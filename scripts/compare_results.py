@@ -117,7 +117,8 @@ def getFamily(benchmark, fam="all"):
             return "unknown"
 
 def getResult(results):
-      assert(not('sat' in results and 'unsat' in results))
+      if 'sat' in results and 'unsat' in results:
+            return "inconsistent"
       if 'sat' in results:
             return 'sat'
       if 'unsat' in results:
@@ -129,6 +130,8 @@ def getResultMap(df, solverIds):
       df_result["result"] = df_result.apply(lambda row: getResult([row[solverId] for solverId in solverIds]), axis=1)
       resultMap = df_result.set_index('benchmark').T.to_dict('list')
       for ele in resultMap:
+            if resultMap[ele][-1] == "inconsistent":
+                  print(ele, resultMap[ele])
             resultMap[ele] = resultMap[ele][-1]
       return resultMap
 
