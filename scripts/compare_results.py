@@ -236,6 +236,7 @@ def getRanking(metric="PAR1 wall time", family="all", limit=5000, result='all'):
             elif result == 'unsat':
                   df_scheme = df_scheme[df_scheme['result'] == 'unsat']
 
+            PAR0 = []
             PAR1 = []
             PAR2 = []
             SOLVED = []
