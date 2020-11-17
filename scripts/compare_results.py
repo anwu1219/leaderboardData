@@ -131,6 +131,7 @@ def getResultMap(df, solverIds):
       resultMap = df_result.set_index('benchmark').T.to_dict('list')
       for ele in resultMap:
             if resultMap[ele][-1] == "inconsistent":
+                  print(solverIds)
                   print(ele, resultMap[ele])
             resultMap[ele] = resultMap[ele][-1]
       return resultMap
