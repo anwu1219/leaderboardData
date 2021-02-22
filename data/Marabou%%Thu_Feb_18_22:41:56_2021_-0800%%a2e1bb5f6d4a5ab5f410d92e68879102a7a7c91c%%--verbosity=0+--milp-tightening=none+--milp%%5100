@@ -80,7 +80,7 @@ to,5100.06,5097.01,318.2,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verb
 unsat,1155.21,1154.63,314.7,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_2,property3
 unsat,7.84,8.41,286.6,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_2,property4
 to,5100.02,5095.55,435.0,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_3,property1
-sat,2996.77,2995.41,346.5,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_3,property2
+unknown,2996.77,2995.41,346.5,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_3,property2
 unsat,12.55,13.52,282.1,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_3,property3
 unsat,4.16,4.41,260.9,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_3,property4
 to,5100.07,5095.52,338.1,Marabou,a2e1bb5f6d4a5ab5f410d92e68879102a7a7c91c,--verbosity=0+--milp-tightening=none+--milp,5100,ACASXU_experimental_v2a_3_4,property1
