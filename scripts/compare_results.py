@@ -169,6 +169,8 @@ def compareSolvers(solverId1, solverId2, metric="cpu time", limit=5000, family='
       else:
             assert(False)
 
+      df_scheme <- df_scheme[order('result'),]
+
       # plot
       plt.figure(figsize=(9,8))
       plt.xscale('log')
