@@ -80,7 +80,7 @@ sat,5.04,13.43,603.4,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_2,prop
 unsat,28.5,38.01,598.5,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_2,property3
 unsat,3.4,8.41,570.4000000000001,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_2,property4
 unsat,6.9,15.49,722.8,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_3,property1
-sat,2996.77,2995.41,635.2,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_3,property2
+unsat,2996.77,2995.41,635.2,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_3,property2
 unsat,4.67,13.02,569.3,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_3,property3
 unsat,3.18,4.41,512.0,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_3,property4
 unsat,6.06,14.52,622.9000000000001,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_3_4,property1
