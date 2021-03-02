@@ -1,4 +1,4 @@
-r,e,s,u,l,t,,,c,p,u, ,t,i,m,e,,,w,a,l,l, ,t,i,m,e,,,m,e,m,o,r,y,,,s,o,l,v,e,r,,,c,o,m,m,i,t,,,t,i,m,e, ,l,i,m,i,t,,,a,r,g,s,,,n,e,t,w,o,r,k,,,p,r,o,p,e,r,t,y,
+result,cpu time,wall time,memory,solver,commit,time limit,args,network,property
 unsat,4.7,13.37,934.1,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_1_1,property1
 unsat,44.84,53.6,780.9000000000001,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_1_1,property2
 unsat,324.87,335.59,594.0,Portfolio-MILP+SOI,x,,5100,ACASXU_experimental_v2a_1_1,property3
