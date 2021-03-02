@@ -174,7 +174,7 @@ def compareSolvers(solverId1, solverId2, metric="cpu time", limit=5000, family='
       plt.xscale('log')
       plt.yscale('log')
 
-      sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", style="result",  s=70)
+      sns.scatterplot(data=df_scheme, x=solverId1, y=solverId2, hue="family", style='result', style_order=['sat', 'unsat'],  s=70)
       plt.legend(bbox_to_anchor=(1.01, 1),borderaxespad=0, fontsize=15, ncol=2)
       plt.plot([1, limit], [1, limit], '--', color='grey')
       plt.text(limit/2 * 0.9, limit * 0.95, '2x', fontsize=12)
@@ -262,8 +262,8 @@ def checkConsistency(df):
 
 def main():
       print(solvers)
-      #df = compareSolvers(solvers[int(sys.argv[3])], solvers[int(sys.argv[4])], metric="cpu time", limit=5000, family=sys.argv[2], result='all')
-      df = getRanking(family=sys.argv[2], metric = "PAR1 cpu time", result='all', limit=5000)
+      df = compareSolvers(solvers[int(sys.argv[1])], solvers[int(sys.argv[2])], metric="cpu time", limit=5000, family='mnist', result='all')
+      #df = getRanking(family=sys.argv[2], metric = "PAR1 cpu time", result='all', limit=5000)
       print(df)
 
 if __name__ == "__main__":
