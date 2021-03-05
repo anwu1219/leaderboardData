@@ -70,7 +70,7 @@ for filename in os.listdir(dataDir):
 families = benchmarks.family.unique().tolist()
 families = ['all'] + families
 
-valueToCompare = ["cpu time"]
+valueToCompare = ["wall time"]
 results = ["all", "sat", "unsat"]
 
 benchmark_to_family = {}
@@ -136,7 +136,7 @@ def getResultMap(df, solverIds):
             resultMap[ele] = resultMap[ele][-1]
       return resultMap
 
-def compareSolvers(solverId1, solverId2, metric="cpu time", limit=5000, family='all', result='all'):
+def compareSolvers(solverId1, solverId2, metric="wall time", limit=5000, family='all', result='all'):
       if solverId1 == solverId2:
             return
       df1 = getDataForSolver(solverId1, metric, limit)
@@ -205,14 +205,14 @@ dataGenerated = False
 rankData = {}
 
 
-# ["PAR1 cpu time", "PAR2 cpu time", "solved"]
-def getRanking(metric="PAR1 cpu time", family="all", limit=5000, result='all'):
+# ["PAR1 wall time", "PAR2 wall time", "solved"]
+def getRanking(metric="PAR1 wall time", family="all", limit=5000, result='all'):
       if not dataGenerated:
             # Get the data for each solver
             # Each data frame is in the following form:
             dfs = []
             for solverId in solvers:
-                  dfs.append(getDataForSolver(solverId, "cpu time", limit))
+                  dfs.append(getDataForSolver(solverId, "wall time", limit))
             df = pd.concat(dfs)
 
             # select benchmarks, remove unknown benchmarks
@@ -250,7 +250,7 @@ def getRanking(metric="PAR1 cpu time", family="all", limit=5000, result='all'):
                   PAR1.append(sum(times[times < limit]) + limit * (numInstances - SOLVED[-1]))
                   PAR2.append(sum(times[times < limit]) + limit * 2 * (numInstances - SOLVED[-1]))
                   DATE.append(" ".join(solverToDate[solverId.split()[0]].split("_")))
-            rankData = {"solver":solvers, "Commit date": DATE, "cpu time": PAR0, "PAR1 cpu time": PAR1, "PAR2 cpu time": PAR2, "solved": SOLVED}
+            rankData = {"solver":solvers, "Commit date": DATE, "wall time": PAR0, "PAR1 wall time": PAR1, "PAR2 wall time": PAR2, "solved": SOLVED}
       df = pd.DataFrame(data=rankData)
       df = df.sort_values(by=[metric], ascending=(metric != "solved"))
       return df
@@ -262,8 +262,8 @@ def checkConsistency(df):
 
 def main():
       print(solvers)
-      df = compareSolvers(solvers[int(sys.argv[1])], solvers[int(sys.argv[2])], metric="cpu time", limit=5000, family='mnist', result='all')
-      #df = getRanking(family=sys.argv[2], metric = "PAR1 cpu time", result='all', limit=5000)
+      df = compareSolvers(solvers[int(sys.argv[1])], solvers[int(sys.argv[2])], metric="wall time", limit=5000, family='mnist', result='all')
+      #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='all', limit=5000)
       print(df)
 
 if __name__ == "__main__":
