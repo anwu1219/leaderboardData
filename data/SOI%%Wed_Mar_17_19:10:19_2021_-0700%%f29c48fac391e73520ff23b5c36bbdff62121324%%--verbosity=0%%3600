@@ -549,7 +549,7 @@ sat,303.29,302.95,2412.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 unsat,34.72,33.97,2338.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1487_tar0_eps0.01
 to,3606.67,3600.11,2397.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1617_tar7_eps0.15
 sat,177.24,175.91,2416.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1643_tar7_eps0.12
-unsat,26.45,25.68,1621.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1861_tar6_eps0.01
+unsat,40.07,40.86,2359.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1861_tar6_eps0.01
 to,3605.4,3600.12,2404.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind2055_tar6_eps0.09
 sat,260.32,259.09,2435.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind2423_tar7_eps0.09
 to,3607.92,3600.03,2417.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind2573_tar0_eps0.15
@@ -593,7 +593,7 @@ sat,267.14,267.0,2416.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity
 to,3606.1,3600.03,2418.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind6731_tar8_eps0.12
 sat,77.35,76.9,2375.1,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind6734_tar9_eps0.03
 unsat,31.3,30.94,2339.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind6755_tar4_eps0.01
-unsat,20.52,18.94,1625.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7048_tar9_eps0.01
+unsat,39.93,40.46,2360.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7048_tar9_eps0.01
 to,3609.26,3600.1,2430.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7128_tar2_eps0.15
 unsat,32.51,30.42,2338.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7305_tar9_eps0.01
 sat,233.84,233.78,2384.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7429_tar9_eps0.03
@@ -626,7 +626,7 @@ to,3606.54,3600.1,2413.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 to,3607.76,3600.09,2441.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind9767_tar3_eps0.06
 sat,1339.36,1336.54,2419.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind977_tar1_eps0.15
 to,3606.41,3600.08,2431.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind9827_tar8_eps0.06
-unsat,23.89,24.61,1625.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind9857_tar1_eps0.03
+sat,41.0,42.06,2371.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind9857_tar1_eps0.03
 to,3606.31,3600.07,2480.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind9918_tar1_eps0.03
 to,3607.67,3600.05,2413.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind9968_tar8_eps0.12
 to,3605.62,3600.03,3255.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_wide_kw_simp,ind1129_tar1_eps0.15
