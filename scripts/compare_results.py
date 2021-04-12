@@ -261,8 +261,7 @@ def checkConsistency(df):
 
 
 def main():
-      print(solvers)
-      df = compareSolvers(solvers[int(sys.argv[1])], solvers[int(sys.argv[2])], metric="wall time", limit=5000, family='mnist', result='all')
+      df = compareSolvers(solvers[int(sys.argv[1])], solvers[int(sys.argv[2])], metric="wall time", limit=3600, family='all', result='all')
       #df = getRanking(family=sys.argv[2], metric = "PAR1 wall time", result='all', limit=5000)
       print(df)
 
