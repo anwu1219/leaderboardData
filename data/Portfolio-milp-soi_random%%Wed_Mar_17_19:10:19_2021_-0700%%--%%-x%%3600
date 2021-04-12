@@ -549,7 +549,7 @@ sat,271.42,270.73,5094.5,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind1464
 unsat,33.98,33.94,4689.799999999999,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind1487_tar0_eps0.01
 to,3606.87,3600.07,5148.2,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind1617_tar7_eps0.15
 sat,234.4,232.96,5069.4,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind1643_tar7_eps0.12
-unsat,40.94,39.2,4755.3,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind1861_tar6_eps0.01
+sat,40.94,39.2,4755.3,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind1861_tar6_eps0.01
 to,3605.83,3600.03,5052.799999999999,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind2055_tar6_eps0.09
 sat,249.68,249.06,5319.9,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind2423_tar7_eps0.09
 to,3607.37,3600.09,5210.8,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind2573_tar0_eps0.15
@@ -593,7 +593,7 @@ sat,314.99,314.11,5036.6,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind6637
 to,3607.77,3600.05,5106.8,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind6731_tar8_eps0.12
 sat,62.72,62.39,4854.2,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind6734_tar9_eps0.03
 unsat,31.81,31.69,4693.9,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind6755_tar4_eps0.01
-unsat,40.82,40.01,4754.9,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind7048_tar9_eps0.01
+sat,40.82,40.01,4754.9,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind7048_tar9_eps0.01
 to,3606.93,3600.03,5210.700000000001,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind7128_tar2_eps0.15
 unsat,32.17,31.78,4694.2,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind7305_tar9_eps0.01
 sat,185.85,185.35,4884.7,Portfolio-MILP+SOI,x,,5100,cifar10_deep_kw_simp,ind7429_tar9_eps0.03
