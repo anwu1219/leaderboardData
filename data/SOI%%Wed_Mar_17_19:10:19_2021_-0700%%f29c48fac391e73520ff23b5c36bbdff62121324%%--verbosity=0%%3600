@@ -549,7 +549,7 @@ sat,303.29,302.95,2412.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 unsat,34.72,33.97,2338.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1487_tar0_eps0.01
 to,3606.67,3600.11,2397.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1617_tar7_eps0.15
 sat,177.24,175.91,2416.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1643_tar7_eps0.12
-unsat,40.07,40.86,2359.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1861_tar6_eps0.01
+sat,40.07,40.86,2359.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind1861_tar6_eps0.01
 to,3605.4,3600.12,2404.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind2055_tar6_eps0.09
 sat,260.32,259.09,2435.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind2423_tar7_eps0.09
 to,3607.92,3600.03,2417.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind2573_tar0_eps0.15
@@ -593,7 +593,7 @@ sat,267.14,267.0,2416.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity
 to,3606.1,3600.03,2418.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind6731_tar8_eps0.12
 sat,77.35,76.9,2375.1,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind6734_tar9_eps0.03
 unsat,31.3,30.94,2339.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind6755_tar4_eps0.01
-unsat,39.93,40.46,2360.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7048_tar9_eps0.01
+sat,39.93,40.46,2360.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7048_tar9_eps0.01
 to,3609.26,3600.1,2430.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7128_tar2_eps0.15
 unsat,32.51,30.42,2338.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7305_tar9_eps0.01
 sat,233.84,233.78,2384.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0,3600,cifar10_deep_kw_simp,ind7429_tar9_eps0.03
