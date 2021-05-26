@@ -620,12 +620,12 @@ to,3607.22,3600.07,2464.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosi
 unsat,41.24,41.49,2337.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind8502_tar0_eps0.01
 sat,246.0,244.17,2411.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind8509_tar1_eps0.12
 unsat,33.91,33.88,2334.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind858_tar5_eps0.01
-unsat,23.2,22.65,1624.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind8818_tar9_eps0.01
 unsat,44.84,44.63,2350.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind8839_tar0_eps0.01
+unsat,36.14,35.7,2413.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9098_tar8_eps0.01
 to,3601.92,3600.1,2438.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind915_tar8_eps0.03
+unsat,37.02,34.79,2381.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9179_tar6_eps0.03
 to,3607.61,3600.04,2387.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind92_tar2_eps0.06
 to,3607.62,3600.06,2396.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9551_tar1_eps0.09
-unsat,19.67,18.62,1622.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9569_tar5_eps0.03
 sat,198.55,197.48,2411.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9575_tar7_eps0.12
 sat,86.07,86.28,2394.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9786_tar7_eps0.06
 to,3606.21,3600.05,2407.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_deep_kw_simp,ind9834_tar9_eps0.09
@@ -657,6 +657,7 @@ to,3606.96,3600.08,3254.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosi
 sat,60.49,61.3,3211.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind3709_tar7_eps0.06
 unsat,39.39,39.48,3106.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind3866_tar1_eps0.01
 to,3608.05,3600.04,3240.1,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind386_tar4_eps0.03
+unsat,45.47,44.29,3147.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind3886_tar5_eps0.01
 to,3607.01,3600.05,3222.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind3905_tar4_eps0.03
 to,3605.68,3600.03,3236.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind4016_tar2_eps0.09
 to,3606.58,3600.07,3254.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind4110_tar7_eps0.12
@@ -700,7 +701,6 @@ sat,281.84,281.27,3249.1,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 unsat,46.01,45.91,3117.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind7741_tar0_eps0.01
 unsat,42.76,41.91,3110.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind7871_tar8_eps0.01
 unsat,51.92,52.08,3113.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind8069_tar0_eps0.01
-unsat,61.62,61.84,3166.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind8171_tar4_eps0.01
 to,3605.58,3600.09,3239.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind8315_tar1_eps0.12
 to,3606.47,3600.11,3233.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind8470_tar5_eps0.06
 to,3606.17,3600.08,3236.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=random+--branch=sc-pol,3600,cifar10_wide_kw_simp,ind8595_tar4_eps0.15

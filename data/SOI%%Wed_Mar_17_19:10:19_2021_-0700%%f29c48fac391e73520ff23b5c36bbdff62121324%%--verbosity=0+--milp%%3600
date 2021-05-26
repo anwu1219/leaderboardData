@@ -620,12 +620,12 @@ to,3608.19,3600.08,2705.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosi
 unsat,36.47,34.45,2377.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind8502_tar0_eps0.01
 sat,657.67,653.99,2698.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind8509_tar1_eps0.12
 unsat,36.6,33.22,2373.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind858_tar5_eps0.01
-unsat,24.63,22.43,1660.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind8818_tar9_eps0.01
 unsat,36.89,35.57,2370.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind8839_tar0_eps0.01
+unsat,36.57,34.08,2374.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9098_tar8_eps0.01
 unsat,143.38,141.9,2503.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind915_tar8_eps0.03
+unsat,36.95,34.79,2395.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9179_tar6_eps0.03
 to,3606.12,3600.02,2706.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind92_tar2_eps0.06
 to,3609.18,3600.1,2719.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9551_tar1_eps0.09
-unsat,24.84,21.61,1657.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9569_tar5_eps0.03
 to,3609.27,3600.09,2892.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9575_tar7_eps0.12
 sat,767.86,764.17,2691.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9786_tar7_eps0.06
 to,3609.71,3600.1,2692.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_deep_kw_simp,ind9834_tar9_eps0.09
@@ -657,6 +657,7 @@ to,3610.38,3600.09,3504.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosi
 sat,140.71,140.47,3349.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind3709_tar7_eps0.06
 unsat,56.87,55.84,3142.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind3866_tar1_eps0.01
 to,3609.36,3600.04,3462.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind386_tar4_eps0.03
+unsat,46.34,44.07,3142.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind3886_tar5_eps0.01
 to,3608.11,3600.08,3475.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind3905_tar4_eps0.03
 to,3608.05,3600.06,3484.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind4016_tar2_eps0.09
 to,3605.05,3600.04,3467.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind4110_tar7_eps0.12
@@ -700,7 +701,6 @@ sat,131.96,129.33,3399.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 unsat,58.21,57.51,3157.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind7741_tar0_eps0.01
 unsat,45.3,44.9,3148.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind7871_tar8_eps0.01
 unsat,53.56,52.71,3148.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind8069_tar0_eps0.01
-unsat,324.11,321.53,3296.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind8171_tar4_eps0.01
 to,3606.72,3600.1,3475.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind8315_tar1_eps0.12
 to,3606.56,3600.1,3462.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind8470_tar5_eps0.06
 to,3608.16,3600.08,3498.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--milp,3600,cifar10_wide_kw_simp,ind8595_tar4_eps0.15

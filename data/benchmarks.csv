@@ -350,12 +350,12 @@ cifar10,cifar10_deep_kw_simp%%ind8417_tar5_eps0.06
 cifar10,cifar10_deep_kw_simp%%ind8502_tar0_eps0.01
 cifar10,cifar10_deep_kw_simp%%ind8509_tar1_eps0.12
 cifar10,cifar10_deep_kw_simp%%ind858_tar5_eps0.01
-cifar10,cifar10_deep_kw_simp%%ind8818_tar9_eps0.01
 cifar10,cifar10_deep_kw_simp%%ind8839_tar0_eps0.01
+cifar10,cifar10_deep_kw_simp%%ind9098_tar8_eps0.01
 cifar10,cifar10_deep_kw_simp%%ind915_tar8_eps0.03
+cifar10,cifar10_deep_kw_simp%%ind9179_tar6_eps0.03
 cifar10,cifar10_deep_kw_simp%%ind92_tar2_eps0.06
 cifar10,cifar10_deep_kw_simp%%ind9551_tar1_eps0.09
-cifar10,cifar10_deep_kw_simp%%ind9569_tar5_eps0.03
 cifar10,cifar10_deep_kw_simp%%ind9575_tar7_eps0.12
 cifar10,cifar10_deep_kw_simp%%ind9786_tar7_eps0.06
 cifar10,cifar10_deep_kw_simp%%ind9834_tar9_eps0.09
@@ -387,6 +387,7 @@ cifar10,cifar10_wide_kw_simp%%ind3691_tar2_eps0.15
 cifar10,cifar10_wide_kw_simp%%ind3709_tar7_eps0.06
 cifar10,cifar10_wide_kw_simp%%ind3866_tar1_eps0.01
 cifar10,cifar10_wide_kw_simp%%ind386_tar4_eps0.03
+cifar10,cifar10_wide_kw_simp%%ind3886_tar5_eps0.01
 cifar10,cifar10_wide_kw_simp%%ind3905_tar4_eps0.03
 cifar10,cifar10_wide_kw_simp%%ind4016_tar2_eps0.09
 cifar10,cifar10_wide_kw_simp%%ind4110_tar7_eps0.12
@@ -430,7 +431,6 @@ cifar10,cifar10_wide_kw_simp%%ind7727_tar4_eps0.12
 cifar10,cifar10_wide_kw_simp%%ind7741_tar0_eps0.01
 cifar10,cifar10_wide_kw_simp%%ind7871_tar8_eps0.01
 cifar10,cifar10_wide_kw_simp%%ind8069_tar0_eps0.01
-cifar10,cifar10_wide_kw_simp%%ind8171_tar4_eps0.01
 cifar10,cifar10_wide_kw_simp%%ind8315_tar1_eps0.12
 cifar10,cifar10_wide_kw_simp%%ind8470_tar5_eps0.06
 cifar10,cifar10_wide_kw_simp%%ind8595_tar4_eps0.15

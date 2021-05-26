@@ -620,12 +620,12 @@ to,3611.49,3600.05,887.5,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=
 unsat,30.85,14.23,530.7,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind8502_tar0_eps0.01
 sat,987.83,957.86,843.9,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind8509_tar1_eps0.12
 unsat,26.84,11.96,520.9,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind858_tar5_eps0.01
-sat,48.96,28.41,598.4,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind8818_tar9_eps0.01
 unsat,23.86,16.68,505.7,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind8839_tar0_eps0.01
+unsat,32.06,15.64,502.2,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9098_tar8_eps0.01
 unsat,96.92,78.11,638.0,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind915_tar8_eps0.03
+unsat,30.09,11.77,508.8,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9179_tar6_eps0.03
 to,3607.29,3600.1,861.0,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind92_tar2_eps0.06
 to,3616.74,3600.04,804.0,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9551_tar1_eps0.09
-sat,225.88,191.63,747.0,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9569_tar5_eps0.03
 to,3614.01,3600.1,872.2,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9575_tar7_eps0.12
 sat,1379.63,1339.52,820.2,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9786_tar7_eps0.06
 to,3624.47,3600.11,808.1,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_deep_kw_simp,ind9834_tar9_eps0.09
@@ -657,6 +657,7 @@ to,3622.58,3600.05,850.4,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=
 sat,90.93,67.13,720.8,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind3709_tar7_eps0.06
 unsat,18.95,10.37,521.6,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind3866_tar1_eps0.01
 to,3375.45,3600.06,831.4,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind386_tar4_eps0.03
+unsat,22.14,10.36,518.7,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind3886_tar5_eps0.01
 to,3618.18,3600.07,797.2,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind3905_tar4_eps0.03
 to,3372.22,3600.07,799.5,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind4016_tar2_eps0.09
 to,3624.44,3600.11,870.8,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind4110_tar7_eps0.12
@@ -700,7 +701,6 @@ sat,128.41,99.54,762.0,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=de
 unsat,25.45,10.68,520.5,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind7741_tar0_eps0.01
 unsat,25.21,11.84,524.9,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind7871_tar8_eps0.01
 unsat,26.01,13.56,526.5,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind8069_tar0_eps0.01
-sat,49.84,27.83,637.3,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind8171_tar4_eps0.01
 to,3441.56,3600.11,808.9,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind8315_tar1_eps0.12
 to,3483.99,3600.1,1000.4,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind8470_tar5_eps0.06
 to,3423.3,3600.11,803.1,ERAN,0be1a470a8439cde16950a7dddf7533d99ec6192,--domain=deeppoly+--numproc=1,3600,cifar10_wide_kw_simp,ind8595_tar4_eps0.15

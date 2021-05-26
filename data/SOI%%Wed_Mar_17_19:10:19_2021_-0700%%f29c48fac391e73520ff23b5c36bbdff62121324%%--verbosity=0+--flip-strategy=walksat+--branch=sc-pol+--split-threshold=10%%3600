@@ -620,12 +620,12 @@ to,3607.38,3600.1,2501.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 unsat,42.5,41.64,2415.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind8502_tar0_eps0.01
 sat,311.81,309.2,2441.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind8509_tar1_eps0.12
 unsat,37.06,34.98,2372.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind858_tar5_eps0.01
-unsat,23.67,23.05,1661.4,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind8818_tar9_eps0.01
 unsat,41.72,39.87,2394.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind8839_tar0_eps0.01
+unsat,36.47,34.89,2375.1,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9098_tar8_eps0.01
 unsat,2582.99,2575.98,2472.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind915_tar8_eps0.03
+unsat,36.3,34.76,2382.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9179_tar6_eps0.03
 to,3608.29,3600.1,2494.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind92_tar2_eps0.06
 to,3607.71,3600.11,2435.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9551_tar1_eps0.09
-unsat,30.88,28.09,1657.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9569_tar5_eps0.03
 sat,200.29,198.59,2445.2,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9575_tar7_eps0.12
 sat,81.95,79.44,2427.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9786_tar7_eps0.06
 to,3607.11,3600.07,2443.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_deep_kw_simp,ind9834_tar9_eps0.09
@@ -657,6 +657,7 @@ to,3607.76,3600.02,3285.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosi
 sat,64.82,63.15,3251.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind3709_tar7_eps0.06
 unsat,48.83,46.1,3144.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind3866_tar1_eps0.01
 to,3605.49,3600.06,3261.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind386_tar4_eps0.03
+unsat,45.31,43.62,3145.7,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind3886_tar5_eps0.01
 to,3609.1,3600.06,3252.3,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind3905_tar4_eps0.03
 to,3608.25,3600.08,3271.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind4016_tar2_eps0.09
 to,3605.11,3600.06,3294.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind4110_tar7_eps0.12
@@ -700,7 +701,6 @@ sat,263.36,261.57,3281.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosit
 unsat,44.08,41.81,3151.8,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind7741_tar0_eps0.01
 unsat,60.23,59.64,3151.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind7871_tar8_eps0.01
 unsat,45.4,42.93,3148.0,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind8069_tar0_eps0.01
-unsat,73.75,73.65,3208.6,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind8171_tar4_eps0.01
 to,3609.77,3600.08,3272.5,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind8315_tar1_eps0.12
 to,3606.55,3600.06,3273.1,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind8470_tar5_eps0.06
 to,3608.67,3600.03,3269.9,SOI,f29c48fac391e73520ff23b5c36bbdff62121324,--verbosity=0+--flip-strategy=walksat+--branch=sc-pol+--split-threshold=10,3600,cifar10_wide_kw_simp,ind8595_tar4_eps0.15
